@@ -1,60 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndiaHome</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IndiaHome</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="shortcut icon" href="./imagesCSS/icon.png" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="./imagesCSS/kucing.png" alt="Logo">
-            </div>
-            <div class="nav-items">
-                <div class="nav-links">
-                    <span class="nav-link" style="cursor: pointer;">
-                        Produk
-                    </span>
-                    <ul>
-                        <li>
-                            <a href="#" class="nav-link">
-                                Paket Rumah
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                Paket Kantor
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <span class="nav-item">
-                    <a href="#" class="nav-link">
-                        Produk
-                    </a>
-                </span>
-                <span class="nav-item">
-                    <a href="#" class="nav-link">
-                        Promo
-                    </a>
-                </span>
-                <span class="nav-item">
-                    <a href="#" class="nav-link">
-                        Lokasi
-                    </a>
-                </span>
-                <span class="nav-item">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <a href="#" class="nav-link">
-                        Formulir Pendaftaran
-                    </a>
-                </span>
-            </div>
-        </nav>
-    </header>
+  <nav>
+    <div class="logo">
+      Indi🏠Home
+    </div>
+    <label for="btn" class="icon">
+      <i class="fa fa-bars"></i>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <label for="btn-1" class="show">Produk +</label>
+        <a class="a" href="#">Produk</a>
+        <input type="checkbox" id="btn-1">
+        <ul>
+          <li><a href="#">Paket Rumah</a></li>
+          <li><a href="#">Paket Kantor</a></li>
+          <li><a href="#">Paket Combo</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Lokasi</a></li>
+      <li><a href="#">Formulir Online</a></li>
+    </ul>
+  </nav>
+  <hr>
 </body>
 </html>
