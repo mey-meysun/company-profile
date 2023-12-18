@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IndiaHome</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
   <link rel="shortcut icon" href="./imagesCSS/icon.png" type="image/x-icon">
 </head>
+
 <body>
   <nav>
     <div class="logo">
@@ -26,7 +29,6 @@
         <ul>
           <li><a href="#">Paket Rumah</a></li>
           <li><a href="#">Paket Kantor</a></li>
-          <li><a href="#">Paket Combo</a></li>
         </ul>
       </li>
       <li><a href="#">Lokasi</a></li>
@@ -34,5 +36,46 @@
     </ul>
   </nav>
   <hr>
+  <!-- <i class="fa fa-wifi" aria-hidden="true"></i>
+  <i class="fa fa-usd" aria-hidden="true"></i>
+  <i class="fa fa-globe" aria-hidden="true"></i> -->
+
+  <section class="main swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="./imagesCSS/landing5.jpg" alt="" class="image" />
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./imagesCSS/landing2.jpg" alt="" class="image" />
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./imagesCSS/landing4.png" alt="" class="image" />
+      </div>
+    </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="JS/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
+
